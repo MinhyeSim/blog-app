@@ -5,10 +5,13 @@ import { getAuth } from "firebase/auth";
 import Router from "./components/Router";
 
 function App() {
+  
   const auth = getAuth(app);
+
   const [isAuthenticated, setIsAuthenicated] = useState<boolean>(
-    !!auth?.currentUser
+      !!auth?.currentUser
   );
+  console.log("isAuthenticated:", isAuthenticated);
   return <Router isAuthenticated={isAuthenticated} />;
 }
 
