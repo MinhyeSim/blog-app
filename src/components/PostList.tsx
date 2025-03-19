@@ -1,8 +1,8 @@
 import { collection, deleteDoc, doc, getDocs, orderBy, query, where } from "firebase/firestore";
 import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { db } from "firebaseApp";
-import AuthContext from "context/AuthContext";
+import { db } from "../firebaseApp";
+import AuthContext from "../context/AuthContext";
 import { toast } from "react-toastify";
 
 interface PostListProps {

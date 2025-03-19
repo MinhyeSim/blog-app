@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState} from "react";
 import { collection, addDoc, doc, getDoc, updateDoc } from "firebase/firestore";
-import { db } from "firebaseApp";
-import AuthContext from "context/AuthContext";
+import { db } from "../firebaseApp";
+import AuthContext from "../context/AuthContext";
 import { useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import { CATEGORIES, CategoryType, PostProps } from "./PostList";

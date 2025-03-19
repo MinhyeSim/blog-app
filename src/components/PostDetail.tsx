@@ -2,7 +2,7 @@ import { useState,useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import { PostProps } from "./PostList";
 import { deleteDoc, doc, getDoc } from "firebase/firestore";
-import { db } from "firebaseApp";
+import { db } from "../firebaseApp";
 import Loader from "./Loader";
 import { toast } from "react-toastify";
 
